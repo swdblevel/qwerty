@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		background-image: url(rock.jpg);
+		background-size: cover;
+		box-sizing: border-box;
+	}
+	
+		
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>new porject</title>
+</head>
+<body>
+<a class="nav-link"aria-current="page"href="#"style="background-color: yellow;">home</a>
+<a class="nav-link"aria-current="page"href="#"style="background-color: yellow;">about us</a>
+<a class="nav-link"aria-current="page"href="#"style="background-color: yellow;">servises</a>
+<a class="nav-link"aria-current="page"href="#"style="background-color: yellow;">investors</a>
+<br><br>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="bool.mp4" type="video/mp4">
+    <source src="bool.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body>
+</html>
